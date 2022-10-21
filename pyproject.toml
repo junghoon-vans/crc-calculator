@@ -10,3 +10,6 @@ license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 requires-python = ">=3.7"
 dynamic = ["version", "description"]
+
+[project.scripts]
+crc = "crc_calculator.cli:main"
