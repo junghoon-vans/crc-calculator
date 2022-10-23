@@ -8,10 +8,11 @@ parser = ArgumentParser()
 
 parser.add_argument(
     "polynomial",
-    help="",
+    type=str,
 )
 parser.add_argument(
     "data",
+    type=str,
 )
 parser.add_argument(
     "-V",
