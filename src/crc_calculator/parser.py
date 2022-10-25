@@ -43,7 +43,9 @@ class Parser:
                 polynomial
 
         """
-        return self.args.polynomial
+        polynomial = self.args.polynomial
+        validate(polynomial)
+        return polynomial
 
     def get_data(self) -> str:
         """Returns data
@@ -52,4 +54,18 @@ class Parser:
                 data
 
         """
-        return self.args.data
+        data = self.args.data
+        validate(data)
+        return data
+
+
+def validate(value: str) -> None:
+    """Check if value is binary.
+
+        Args:
+            value: Binary string
+
+    """
+    if not all(map(lambda x: x in ["0", "1"], list(value))):
+        print("Please enter binary numbers only!")
+        exit(0)
