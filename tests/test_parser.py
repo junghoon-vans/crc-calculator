@@ -1,9 +1,18 @@
-from argparse import Namespace
+import pytest
 
-from src.crc_calculator.parser import parser
+from src.crc_calculator.parser import Parser
 
 
-def test_parse_args():
-    assert parser.parse_args(["100101", "101001010"]) == Namespace(
-        polynomial='100101', data='101001010',
-    )
+@pytest.fixture(scope="module")
+def parser() -> Parser:
+    parser = Parser()
+    parser.parse(["100101", "101001010"])
+    return parser
+
+
+def test_get_data(parser: Parser):
+    assert parser.get_data() == '101001010'
+
+
+def test_get_polynomial(parser: Parser):
+    assert parser.get_polynomial() == '100101'
