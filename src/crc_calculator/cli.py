@@ -8,7 +8,7 @@ from crc_calculator.parser import Parser
 
 
 def main(argv: Optional[Sequence[str]] = None):
-    """Main function to run application
+    """Main function to calculate crc.
 
         Args:
             argv: Arguments vector
