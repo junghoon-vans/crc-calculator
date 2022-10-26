@@ -20,15 +20,15 @@ def main(argv: Optional[Sequence[str]] = None):
     polynomial = parser.get_polynomial().lstrip()
     data = parser.get_data().lstrip()
 
-    crc = calculate(
+    checksum = calculate(
         polynomial=convert_to_list(polynomial),
         data=convert_to_list(data),
     )
 
-    valid = calculate(
+    validation = calculate(
         polynomial=convert_to_list(polynomial),
-        data=convert_to_list(data+crc),
+        data=convert_to_list(data+checksum),
     )
 
-    print(f'crc value: {crc}')
-    print(f'valid result: {valid}')
+    print(f'checksum: {checksum}')
+    print(f'validation: {validation}')
