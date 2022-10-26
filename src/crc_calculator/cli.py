@@ -2,6 +2,7 @@
 from typing import Optional
 from typing import Sequence
 
+from crc_calculator.calculator import calculate
 from crc_calculator.parser import Parser
 
 
@@ -15,5 +16,7 @@ def main(argv: Optional[Sequence[str]] = None):
     parser = Parser()
     parser.parse(argv)
 
-    print(parser.get_polynomial())
-    print(parser.get_data())
+    calculate(
+        polynomial=list(parser.get_polynomial()),
+        data=list(parser.get_data()),
+    )
