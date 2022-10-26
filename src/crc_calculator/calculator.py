@@ -3,10 +3,10 @@ from typing import List
 
 def calculate(polynomial: List[int], data: List[int]) -> List[int]:
     crc: List[int] = []
-    append_zeroes(polynomial, data)
-
     result = xor(polynomial, data)
     count = len(data) - len(polynomial)
+
+    append_zeroes(polynomial, data)
 
     for i in range(count):
         result.pop(0)
@@ -17,9 +17,10 @@ def calculate(polynomial: List[int], data: List[int]) -> List[int]:
             crc = result
         else:
             result = xor(
-                [0 for _ in range(len(polynomial))],
-                result,
-            ) if result[0] == 0 else xor(polynomial, result)
+                polynomial if result[0] != 0 else [
+                    0 for _ in range(len(polynomial))
+                ], result,
+            )
 
     return crc
 
