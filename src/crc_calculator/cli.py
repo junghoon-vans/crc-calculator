@@ -17,8 +17,8 @@ def main(argv: Optional[Sequence[str]] = None):
     parser = Parser()
     parser.parse(argv)
 
-    polynomial = parser.get_polynomial().lstrip()
-    data = parser.get_data().lstrip()
+    polynomial = parser.get_polynomial().lstrip('0')
+    data = parser.get_data().lstrip('0')
 
     checksum = calculate(
         polynomial=convert_to_list(polynomial),
