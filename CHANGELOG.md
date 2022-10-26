@@ -1,3 +1,14 @@
+## v0.4.0 (2022-10-26)
+
+### Fix
+
+- Remove unused __init__.py
+
+### Refactor
+
+- Change print format
+- Change args of parser to optional
+
 ## v0.3.1 (2022-10-26)
 
 ### Fix
