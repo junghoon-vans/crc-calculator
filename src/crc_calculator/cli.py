@@ -20,10 +20,11 @@ def main(argv: Optional[Sequence[str]] = None):
     polynomial = int(parser.get_polynomial())
     data = int(parser.get_data())
 
-    calculate(
+    result = calculate(
         polynomial=list_from(polynomial),
         data=list_from(data),
     )
+    print(result)
 
 
 def list_from(value: int) -> List[int]:
