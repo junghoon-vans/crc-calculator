@@ -14,6 +14,9 @@ dynamic = ["version", "description"]
 [project.scripts]
 crc = "crc_calculator.cli:main"
 
+[project.urls]
+Source = "https://github.com/junghoon-vans/crc-calculator"
+
 [tool]
 [tool.commitizen]
 name = "cz_conventional_commits"
