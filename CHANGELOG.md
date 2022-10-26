@@ -1,3 +1,13 @@
+## v0.3.0 (2022-10-26)
+
+### Feat
+
+- Add valid result print
+
+### Refactor
+
+- Change input type of convert_to_list
+
 ## v0.2.1 (2022-10-26)
 
 ### Fix
