@@ -12,8 +12,8 @@ jobs:
       - name: Package windows application
         uses: JackMcKew/pyinstaller-action-windows@main
         with:
-          path: src
+          path: src/crc_calculator
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          path: src/dist/windows
+          path: src/crc_calculator/dist/windows
