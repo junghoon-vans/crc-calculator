@@ -17,11 +17,18 @@ def main(argv: Optional[Sequence[str]] = None):
     parser = Parser()
     parser.parse(argv)
 
-    polynomial = int(parser.get_polynomial())
-    data = int(parser.get_data())
+    polynomial = parser.get_polynomial().lstrip()
+    data = parser.get_data().lstrip()
 
-    result = calculate(
+    crc = calculate(
         polynomial=convert_to_list(polynomial),
         data=convert_to_list(data),
     )
-    print(result)
+
+    valid = calculate(
+        polynomial=convert_to_list(polynomial),
+        data=convert_to_list(data+crc),
+    )
+
+    print(f'crc value: {crc}')
+    print(f'valid result: {valid}')
