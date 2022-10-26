@@ -24,4 +24,11 @@ def main(argv: Optional[Sequence[str]] = None):
         polynomial=convert_to_list(polynomial),
         data=convert_to_list(data),
     )
+
+    valid = calculate(
+        polynomial=convert_to_list(polynomial),
+        data=convert_to_list(data+crc),
+    )
+
     print(f'crc value: {crc}')
+    print(f'valid result: {valid}')
