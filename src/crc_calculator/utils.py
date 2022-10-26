@@ -1,16 +1,16 @@
 from typing import List
 
 
-def convert_to_list(value: int) -> List[int]:
-    """Convert int value to list
+def convert_to_list(value: str) -> List[int]:
+    """Convert string to int list
 
         Args:
-            value: Integer value
+            value: String value
         Returns:
             List of integer values decomposed by digits
 
     """
-    return [int(i) for i in str(value)]
+    return [int(i) for i in value]
 
 
 def convert_to_str(value: List[int]) -> str:
