@@ -1,4 +1,5 @@
 """Command-line implementation of crc-calculator"""
+import sys
 from typing import Optional
 from typing import Sequence
 
@@ -15,7 +16,7 @@ def main(argv: Optional[Sequence[str]] = None):
 
     """
     parser = Parser()
-    parser.parse(argv)
+    parser.parse(argv or sys.argv[1:])
 
     polynomial = parser.get_polynomial().lstrip('0')
     data = parser.get_data().lstrip('0')
