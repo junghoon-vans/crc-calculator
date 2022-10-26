@@ -5,10 +5,10 @@ from crc_calculator.utils import convert_to_str
 
 def calculate(polynomial: List[int], data: List[int]) -> str:
     crc = ""
+    append_zeroes(polynomial, data)
+
     result = xor(polynomial, data)
     count = len(data) - len(polynomial)
-
-    append_zeroes(polynomial, data)
 
     for i in range(count):
         result.pop(0)
