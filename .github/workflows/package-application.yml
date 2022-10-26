@@ -1,0 +1,21 @@
+name: Package Application with Pyinstaller
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  package_windows_executable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Package windows application
+        uses: JackMcKew/pyinstaller-action-windows@main
+        with:
+          path: src
+          spec: build.spec
+          requirements: requirements-build.txt
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: src/dist/windows
