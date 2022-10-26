@@ -14,16 +14,15 @@ def calculate(polynomial: List[int], data: List[int]) -> str:
         result.pop(0)
         result.append(data[len(polynomial)+i])
 
+        result = xor(
+            polynomial if result[0] != 0 else [
+                0 for _ in range(len(polynomial))
+            ], result,
+        )
+
         if i == count-1:
             result.pop(0)
             crc = convert_to_str(result)
-        else:
-            result = xor(
-                polynomial if result[0] != 0 else [
-                    0 for _ in range(len(polynomial))
-                ], result,
-            )
-
     return crc
 
 
