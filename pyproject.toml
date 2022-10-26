@@ -17,7 +17,7 @@ crc = "crc_calculator.cli:main"
 [tool]
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.4.0"
+version = "0.4.1"
 tag_format = "v$version"
 version_files = [
     "src/crc_calculator/__init__.py",

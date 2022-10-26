@@ -1,3 +1,9 @@
+## v0.4.1 (2022-10-26)
+
+### Fix
+
+- Add parameter to lstrip function in cli
+
 ## v0.4.0 (2022-10-26)
 
 ### Fix
