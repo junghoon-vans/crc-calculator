@@ -1,10 +1,10 @@
 """Command-line implementation of crc-calculator"""
-from typing import List
 from typing import Optional
 from typing import Sequence
 
 from crc_calculator.calculator import calculate
 from crc_calculator.parser import Parser
+from crc_calculator.utils import convert_to_list
 
 
 def main(argv: Optional[Sequence[str]] = None):
@@ -21,17 +21,7 @@ def main(argv: Optional[Sequence[str]] = None):
     data = int(parser.get_data())
 
     result = calculate(
-        polynomial=list_from(polynomial),
-        data=list_from(data),
+        polynomial=convert_to_list(polynomial),
+        data=convert_to_list(data),
     )
     print(result)
-
-
-def list_from(value: int) -> List[int]:
-    """Make list from int value
-
-        Args:
-            value: int value to make list
-
-    """
-    return [int(p) for p in str(value)]
