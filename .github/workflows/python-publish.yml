@@ -28,12 +28,3 @@ jobs:
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
-    - name: Package windows application
-      uses: JackMcKew/pyinstaller-action-windows@main
-      with:
-        path: src/crc_calculator
-        requirements: "requirements-dev.txt"
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        path: src/dist/windows
