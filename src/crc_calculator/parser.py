@@ -13,12 +13,18 @@ class Parser:
         self.args = None
 
         self._parser.add_argument(
-            "polynomial",
+            "-p",
+            "--polynomial",
             type=str,
+            required=True,
+            help="polynomial code that expressed as strings of binary digits",
         )
         self._parser.add_argument(
-            "data",
+            "-d",
+            "--data",
             type=str,
+            required=True,
+            help="data that expressed as strings of binary digits",
         )
         self._parser.add_argument(
             "-V",

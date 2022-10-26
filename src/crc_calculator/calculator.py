@@ -4,7 +4,14 @@ from crc_calculator.utils import convert_to_str
 
 
 def calculate(polynomial: List[int], data: List[int]) -> str:
-    crc = ""
+    """
+        Args:
+            polynomial: polynomial code
+            data: input data
+        Returns:
+            reminder calculating polynomial and data
+    """
+    reminder = ""
     append_zeroes(polynomial, data)
 
     result = xor(polynomial, data)
@@ -22,8 +29,8 @@ def calculate(polynomial: List[int], data: List[int]) -> str:
 
         if i == count-1:
             result.pop(0)
-            crc = convert_to_str(result)
-    return crc
+            reminder = convert_to_str(result)
+    return reminder
 
 
 def append_zeroes(polynomial: List[int], data: List[int]):

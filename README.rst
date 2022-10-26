@@ -17,15 +17,11 @@ How to use
 .. code:: bash
 
    $ crc -h
-    usage: crc [-h] [-V] polynomial data
+    usage: crc -p [POLYNOMIAL] -d [DATA]
 
-    positional arguments:
-      polynomial
-      data
-
-    options:
-      -h, --help     show this help message and exit
-      -V, --version  show program's version number and exit
+   $ crc --polynomial 100101 --data 101101001
+    checksum: 00010
+    validation: 00000
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/crc-calculator
    :target: https://pypi.org/project/crc-calculator/

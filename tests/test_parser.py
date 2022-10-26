@@ -6,7 +6,7 @@ from src.crc_calculator.parser import Parser
 @pytest.fixture(scope="module")
 def parser() -> Parser:
     parser = Parser()
-    parser.parse(["100101", "101001010"])
+    parser.parse(["-p", "100101", "-d", "101001010"])
     return parser
 
 
