@@ -13,3 +13,12 @@ dynamic = ["version", "description"]
 
 [project.scripts]
 crc = "crc_calculator.cli:main"
+
+[tool]
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
+version_files = [
+    "src/crc_calculator/__init__.py",
+]
