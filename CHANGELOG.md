@@ -1,3 +1,9 @@
+## v0.3.1 (2022-10-26)
+
+### Fix
+
+- Update calculate logic to resolve error
+
 ## v0.3.0 (2022-10-26)
 
 ### Feat
