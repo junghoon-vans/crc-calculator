@@ -1,3 +1,9 @@
+## v0.5.0 (2022-10-26)
+
+### Feat
+
+- Add sys.argv[1:] to pass arguments from executable
+
 ## v0.4.1 (2022-10-26)
 
 ### Fix
