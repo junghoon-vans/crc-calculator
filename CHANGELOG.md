@@ -1,3 +1,9 @@
+## v0.5.1 (2022-10-26)
+
+### Fix
+
+- Update python-publish workflow to change source path
+
 ## v0.5.0 (2022-10-26)
 
 ### Feat
