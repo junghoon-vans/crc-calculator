@@ -1,3 +1,9 @@
+## v0.2.1 (2022-10-26)
+
+### Fix
+
+- Reorder code to resolve ignoring append_zeroes()
+
 ## v0.2.0 (2022-10-26)
 
 ### Feat
