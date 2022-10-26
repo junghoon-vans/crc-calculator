@@ -13,7 +13,7 @@ jobs:
         uses: JackMcKew/pyinstaller-action-windows@main
         with:
           path: src
-          spec: __main__.spec
+          spec: build.spec
           requirements: requirements-build.txt
       - name: Upload artifact
         uses: actions/upload-artifact@v3
