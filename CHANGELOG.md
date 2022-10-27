@@ -1,3 +1,9 @@
+## v0.5.2 (2022-10-27)
+
+### Fix
+
+- Update calculate logic to resolve error
+
 ## v0.5.1 (2022-10-26)
 
 ### Fix
