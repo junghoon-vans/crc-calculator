@@ -20,7 +20,7 @@ Source = "https://github.com/junghoon-vans/crc-calculator"
 [tool]
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.6.0"
+version = "0.6.1"
 tag_format = "v$version"
 version_files = [
     "src/crc_calculator/__init__.py",

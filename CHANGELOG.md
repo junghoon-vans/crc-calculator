@@ -1,3 +1,9 @@
+## v0.6.1 (2022-10-27)
+
+### Fix
+
+- Update asset_name to set file format
+
 ## v0.6.0 (2022-10-27)
 
 ## v0.5.2 (2022-10-27)
