@@ -11,7 +11,6 @@ def calculate(polynomial: List[int], data: List[int]) -> str:
         Returns:
             reminder calculating polynomial and data
     """
-    reminder = ""
     append_zeroes(polynomial, data)
 
     result = xor(polynomial, data)
@@ -27,10 +26,8 @@ def calculate(polynomial: List[int], data: List[int]) -> str:
             ], result,
         )
 
-        if i == count-1:
-            result.pop(0)
-            reminder = convert_to_str(result)
-    return reminder
+    result.pop(0)
+    return convert_to_str(result)
 
 
 def append_zeroes(polynomial: List[int], data: List[int]):
