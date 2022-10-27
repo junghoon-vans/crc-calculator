@@ -32,7 +32,6 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 .spec
-!src/build.spec
 
 # Installer logs
 pip-log.txt
@@ -131,3 +130,6 @@ dmypy.json
 
 # Jetbrains
 .idea
+
+# Mac OS
+.DS_STORE
