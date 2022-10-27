@@ -16,6 +16,9 @@ jobs:
           cache: 'pip'
           cache-dependency-path: |
             requirements-build.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements-build.txt --upgrade pip
       - name: Create build.spec
         run: | 
           pyinstaller src/crc_calculator/__main__.py
