@@ -9,6 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+          cache-dependency-path: |
+            requirements-build.txt
+      - name: Create build.spec
+        run: | 
+          pyinstaller src/crc_calculator/__main__.py
+          mv __main__.spec build.spec
       - name: Package windows application
         uses: JackMcKew/pyinstaller-action-windows@main
         with:
