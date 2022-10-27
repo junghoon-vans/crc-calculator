@@ -12,7 +12,7 @@ jobs:
       - name: Package windows application
         uses: JackMcKew/pyinstaller-action-windows@main
         with:
-          path: src
+          path: .
           spec: build.spec
           requirements: requirements-build.txt
       - name: Upload artifact
