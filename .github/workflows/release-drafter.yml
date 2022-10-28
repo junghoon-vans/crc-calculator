@@ -23,6 +23,7 @@ jobs:
 
   package_windows_executable:
     runs-on: ubuntu-latest
+    needs: update_release_draft
     steps:
       - uses: actions/checkout@v3
       - name: Setup Python
