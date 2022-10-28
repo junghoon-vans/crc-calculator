@@ -1,3 +1,9 @@
+## v0.6.3 (2022-10-28)
+
+### Fix
+
+- Add missing needs in package_windows_executable workflow
+
 ## v0.6.2 (2022-10-28)
 
 ### Fix
