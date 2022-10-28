@@ -1,3 +1,9 @@
+## v0.6.2 (2022-10-28)
+
+### Fix
+
+- Correct python-version in package_windows_executable workflow
+
 ## v0.6.1 (2022-10-27)
 
 ### Fix
