@@ -2,7 +2,7 @@
 CRC Calculator
 ==============
 
-|PyPI version|
+|PyPI version| |pre-commit.ci status| |GitHub Workflow Status|
 
 Usage with Installation
 -----------------------
@@ -42,3 +42,6 @@ Usage of Windows Executable
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/crc-calculator
    :target: https://pypi.org/project/crc-calculator/
+.. |pre-commit.ci status| image:: https://results.pre-commit.ci/badge/github/junghoon-vans/crc-calculator/main.svg
+   :target: https://results.pre-commit.ci/latest/github/junghoon-vans/crc-calculator/main
+.. |GitHub Workflow Status| image:: https://img.shields.io/github/workflow/status/junghoon-vans/crc-calculator/Upload%20Python%20Package
