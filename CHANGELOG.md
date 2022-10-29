@@ -1,3 +1,9 @@
+## v0.6.4 (2022-10-29)
+
+### Fix
+
+- Add workflow step to compress files for resolving illegal operation error on upload_release_asset
+
 ## v0.6.3 (2022-10-28)
 
 ### Fix
